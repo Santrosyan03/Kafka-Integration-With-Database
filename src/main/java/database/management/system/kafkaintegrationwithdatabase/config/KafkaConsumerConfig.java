@@ -27,7 +27,7 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.tariel.franz.customer");
+        props.put(JsonDeserializer.TRUSTED_PACKAGES, "database.management.system.kafkaintegrationwithdatabase.message");
         return props;
     }
 
