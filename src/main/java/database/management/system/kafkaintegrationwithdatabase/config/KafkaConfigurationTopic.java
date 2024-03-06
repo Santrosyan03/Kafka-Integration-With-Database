@@ -15,6 +15,6 @@ public class KafkaConfigurationTopic {
     @Bean
     public NewTopic createTopic(){
         return TopicBuilder.name(topicName)
-                           .build();
+                .build();
     }
 }
