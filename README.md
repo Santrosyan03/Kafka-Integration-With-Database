@@ -48,13 +48,16 @@ To get started with the project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Santrosyan03/Kafka-Integration-With-Database
-2. Build the project using Maven:
+2. Navigate to the project directory:
+   ```bash
+   cd Kafka-Integration-With-Database
+3. Build the project using Maven:
    ```bash
    mvn clean install
-3. Get Kafka and extract it
+4. Get Kafka and extract it
    ```bash
    cd kafka_2.13-3.7.0
-4. Start The Kafka Environment (with ZooKeeper)
+5. Start The Kafka Environment (with ZooKeeper)
    ```bash
    bin/zookeeper-server-start.sh config/zookeeper.properties
    bin/kafka-server-start.sh config/server.properties
