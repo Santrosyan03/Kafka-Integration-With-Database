@@ -13,11 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     private final ProducerKafka kafkaProducer;
-    private final MessageRepository messageRepository;
 
-    public Controller(ProducerKafka kafkaProducer, MessageRepository messageRepository) {
+    public Controller(ProducerKafka kafkaProducer) {
         this.kafkaProducer = kafkaProducer;
-        this.messageRepository = messageRepository;
     }
 
     @PostMapping("/publish")
