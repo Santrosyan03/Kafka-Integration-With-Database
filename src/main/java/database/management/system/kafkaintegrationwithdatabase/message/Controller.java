@@ -25,7 +25,6 @@ public class Controller {
         kafkaProducer.sendMessage(Message.builder()
                 .value(message.getValue())
                 .build());
-//        messageRepository.save(message);
         return ResponseEntity.ok("Successfully sent :)");
     }
 
